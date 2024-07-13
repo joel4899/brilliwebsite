@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brilli Malta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero">
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Brilli Malta</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="overlay">
+            <div class="hero-content">
+                <p class="hero-text">Your premier party planning and rental service</p>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="intro">
+        <h2>About Us</h2>
+        <p>Welcome to Brilli, where we illuminate your moments with creativity and precision. Whether it’s a milestone celebration or a corporate gathering, Brilli is here to guide you towards a remarkable experience...</p>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-container">
+            <div class="service">
+                <h3>Kids Entertainment</h3>
+                <p>Fun activities for kids.</p>
+            </div>
+            <div class="service">
+                <h3>Water Games</h3>
+                <p>Exciting water games.</p>
+            </div>
+            <div class="service">
+                <h3>Inflatable Bubble House</h3>
+                <p>Inflatable fun for everyone.</p>
+            </div>
+            <div class="service">
+                <h3>Goodie Bags & Souvenirs</h3>
+                <p>Memorable keepsakes for guests.</p>
+            </div>
+            <div class="service">
+                <h3>Other Occasions</h3>
+                <p>Gender reveal, bachelor/bachelorette parties, grad parties.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="image1.jpeg" alt="Gallery Image 1"></div>
+                <div class="swiper-slide"><img src="image2.jpeg" alt="Gallery Image 2"></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="contact-info">
+            <p>Email: example@brilli.com</p>
+            <p>Facebook: Brilli</p>
+            <p>Instagram: @brilli_malta</p>
+            <p>Contact Number: 17919001 / 79922002</p>
+        </div>
+    </footer>
+    <!-- Add Swiper's JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            loop: true,
+        });
+    </script>
+</body>
+</html>
