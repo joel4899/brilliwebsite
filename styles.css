@@ -11,6 +11,22 @@ body {
     box-sizing: border-box;
     overflow-x: hidden; /* Prevent horizontal overflow */
 }
+@media (max-width: 1024px) and (min-width: 600px) {
+    body {
+      width: 90%;
+      padding: 15px;
+      overflow-x: hidden;
+    }
+  }
+  
+  /* Mobile view (width less than 600px) */
+  @media (max-width: 599px) {
+    body {
+      width: 95%;
+      padding: 10px;
+      overflow-x: hidden;
+    }
+  }
 
 header.hero {
     position: relative;
