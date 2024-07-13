@@ -1,3 +1,4 @@
+/* Reset and base styles */
 * {
     margin: 0;
     padding: 0;
@@ -11,22 +12,6 @@ body {
     box-sizing: border-box;
     overflow-x: hidden; /* Prevent horizontal overflow */
 }
-@media (max-width: 1024px) and (min-width: 600px) {
-    body {
-      width: 90%;
-      padding: 15px;
-      overflow-x: hidden;
-    }
-  }
-  
-  /* Mobile view (width less than 600px) */
-  @media (max-width: 599px) {
-    body {
-      width: 95%;
-      padding: 10px;
-      overflow-x: hidden;
-    }
-  }
 
 header.hero {
     position: relative;
@@ -175,4 +160,58 @@ footer {
 
 footer .contact-info p {
     margin: 5px 0;
+}
+
+/* Responsive adjustments */
+
+/* Tablet view (width between 600px and 1024px) */
+@media (max-width: 1024px) {
+    .container,
+    section,
+    header.hero,
+    section.gallery {
+        width: 90%;
+        padding: 15px;
+    }
+    .nav.navbar .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav.navbar .nav-links li {
+        margin: 10px 0;
+    }
+    section.services .service {
+        width: 45%;
+        margin: 10px 5%;
+    }
+}
+
+/* Mobile view (width less than 600px) */
+@media (max-width: 599px) {
+    .container,
+    section,
+    header.hero,
+    section.gallery {
+        width: 95%;
+        padding: 10px;
+    }
+    .nav.navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+    .nav.navbar .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav.navbar .nav-links li {
+        margin: 10px 0;
+    }
+    section.services .service {
+        width: 100%;
+        margin: 10px 0;
+    }
+    header.hero .hero-content .hero-text {
+        font-size: 1.5em;
+    }
 }
