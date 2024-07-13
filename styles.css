@@ -209,3 +209,43 @@ footer {
 footer .contact-info p {
     margin: 5px 0;
 }
+
+/* Product Page Styles */
+.product-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 30%;
+    background: #f9f9f9;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product h3 {
+    margin-top: 10px;
+}
+
+.product p {
+    margin: 10px 0;
+}
+
+.product-image {
+    width: 100%;
+    max-width: 300px; /* Adjust this value as needed */
+    height: auto;
+    object-fit: cover; /* Ensures the image covers the given size */
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
