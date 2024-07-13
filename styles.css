@@ -9,7 +9,7 @@ body {
 header.hero {
     position: relative;
     height: 100vh;
-    background: url('path/to/your/hero-image.jpg') no-repeat center center/cover;
+    background: url('image1.jpeg') no-repeat center center/cover;
     color: white;
     display: flex;
     align-items: center;
